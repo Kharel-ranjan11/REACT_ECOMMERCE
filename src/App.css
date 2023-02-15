@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+}
+
+.btn {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid black;
+  text-transform: capitalize;
+  margin: 4rem;
+  padding: 20px;
+  position: relative;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* transform: scale(1.5); */
+  /* border-radius: 3% 0% 129% 131%; */
+  clip-path: circle(180vh at 50% -185vh);
+  /* border-radius: 0 0 50%/0 0 100% 100%; */
+  transition: 0.7s ease-in-out;
+}
+
+.btn:hover::after {
+  clip-path: circle(180vh at 50% -171vh);
+}
+
+#effect > p {
+  font-size: 20px;
+  position: relative;
+  margin: 4rem;
+  width: fit-content;
+}
+body {
+  background-image: url('https://music-club.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/05/hero_home_bend.jpg');
+}
+#effect > p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(16, 170, 119);
+  left: 0;
+  height: 2px;
+  width: 90px;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+#effect > p:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+#effect {
+  height: 200vh;
+  position: absolute;
+  width: 100%;
+}
+#home > h4,
+#about > h4,
+#service > h4 {
+  background: linear-gradient(
+    to right,
+    rgb(3, 249, 3),
+    rgb(2, 2, 221),
+    rgb(165, 3, 3)
+  );
+  color: aqua;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  font-size: 30px;
+}
+/* --------------------------------------------------------- */
+#product > div:nth-child(1) {
+  padding: 10px 0px 10px 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#product > div > header > .brand {
+  border-bottom: 2px solid rgba(19, 19, 50, 0.929);
+  padding-bottom: 5px;
+}
+#product > div > header > .brand > img {
+  width: 30px;
+}
+#product > div > aside {
+  margin: auto;
+  padding-right: 3px;
+}
+#product > div > aside > .links > p {
+  padding: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  font-size: 18px;
+}
+#product > div > aside > .links > p:hover {
+  color: white;
+  background-image: linear-gradient(
+    98deg,
+    rgb(198, 167, 254),
+    rgb(145, 85, 253) 94%
+  );
+}
+#product > div > aside > .links > p > i {
+  padding-right: 5px;
+}
+#product > div:nth-child(2) {
+  background-color: transparent;
+  width: 100%;
+}
+/* ----------------------------------------------- */
+#product > .pages > .topSection {
+  border-bottom: 2px solid silver;
+  padding: 3px 10px 5px 10px;
+  justify-content: space-between;
+  display: flex;
+}
+#product > .pages > .topSection > .icons > span {
+  color: rgb(166, 155, 242);
+  font-size: 19px;
+  margin-left: 10px;
+}
+#product > .pages > .topSection > .icons > span > i,
+#product > .pages > .topSection > .search > span > i {
+  cursor: pointer;
+  background-color: rgba(218, 220, 232, 0.332);
+  padding: 10px;
+  border-radius: 50%;
+}
+#product > .pages > .topSection > .icons > span > i:hover {
+  background-color: rgba(218, 220, 232, 0.618);
+}
+#product > .pages > .topSection > .search > span > i:hover {
+  background-color: rgba(218, 220, 232, 0.618);
+}
+/* --------------------------------------------- */

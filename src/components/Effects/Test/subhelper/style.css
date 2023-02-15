@@ -1,0 +1,55 @@
+.innerNav > .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5px;
+  background-color: white;
+  /* background-color: rgba(255, 0, 0, 0.125); */
+}
+.innerNav > .links > .nav-item {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.innerNav > .links > .nav-item > #link {
+  border-bottom: 2px solid rgb(18, 123, 236);
+  color: rgb(18, 123, 236);
+}
+.cart_icon > i {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(125, 123, 142);
+  font-size: 20px;
+}
+.overlays {
+  position: relative;
+}
+.overContent {
+  position: absolute;
+  bottom: 0;
+  height: 0%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.53);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: height 0.2s linear;
+}
+.overlays:hover .overContent {
+  height: 25%;
+}
+.overContent > span {
+  padding: 10px;
+  background-color: rgba(218, 220, 232, 0.332);
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.overContent > span > i {
+  font-size: 20px;
+  color: rgb(166, 155, 242);
+}
+.overContent > span > i:hover {
+  color: rgb(144, 128, 245);
+}
